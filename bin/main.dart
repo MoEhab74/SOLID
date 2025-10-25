@@ -1,5 +1,5 @@
-
-
+import 'package:ocp/DIP/gmail.dart';
+import 'package:ocp/DIP/hotmail.dart';
 import 'package:ocp/DIP/notification.dart';
 
 void main(List<String> arguments) {
@@ -31,19 +31,21 @@ void main(List<String> arguments) {
   // goalkeeper.shoot(); // This impelement the player method because shoot is not in Goalkeeper
   */
 
- // ISP
- 
- /*
+  // ISP
+
+  /*
   PayByAll paymentMethod = PayByAll();
   paymentMethod.processOrder();
   paymentMethod.cashOrderInvoice();
   paymentMethod.creditOrderInvoice();
   paymentMethod.onLineOrderInvoice();
   */
- 
- // DIP
 
- Notification notification = Notification();
- notification.sendGmailNotification();
- notification.sendHotmailNotification();
+  // DIP
+
+  Notification notification;
+  notification = Notification(emailService: GmailService());
+  notification.sendEmail();
+  notification = Notification(emailService: HotmailService());
+  notification.sendEmail();
 }
