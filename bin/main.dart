@@ -1,5 +1,7 @@
 
 
+import 'package:ocp/DIP/notification.dart';
+
 void main(List<String> arguments) {
   // OCP
 
@@ -38,5 +40,10 @@ void main(List<String> arguments) {
   paymentMethod.creditOrderInvoice();
   paymentMethod.onLineOrderInvoice();
   */
+ 
+ // DIP
 
+ Notification notification = Notification();
+ notification.sendGmailNotification();
+ notification.sendHotmailNotification();
 }
