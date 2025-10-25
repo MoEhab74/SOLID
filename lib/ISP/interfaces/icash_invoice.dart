@@ -1,3 +1,5 @@
 abstract class IcashInvoice {
-  void cashOrderInvoice();
+  void cashOrderInvoice(){
+    print('Generating cash order invoice...');
+  }
 }

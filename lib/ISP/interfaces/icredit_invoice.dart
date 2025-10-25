@@ -1,3 +1,5 @@
 abstract class IcreditInvoice {
-  void creditOrderInvoice();
+  void creditOrderInvoice(){
+    print('Generating credit order invoice...');
+  }
 }

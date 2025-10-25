@@ -3,22 +3,21 @@ import 'package:ocp/ISP/interfaces/iorder.dart';
 class PayByAll implements IOrder {
   @override
   void cashOrderInvoice() {
-    // TODO: implement cashOrderInvoice
+    print('Generating cash order invoice from PayByAll...');
   }
 
   @override
   void creditOrderInvoice() {
-    // TODO: implement creditOrderInvoice
+    print('Generating credit order invoice from PayByAll...');
   }
 
   @override
   void onLineOrderInvoice() {
-    // TODO: implement onLineOrderInvoice
+    print('Generating online order invoice from PayByAll...');
   }
 
   @override
   void processOrder() {
-    // TODO: implement processOrder
+    print('Processing order from PayByAll...');
   }
-
 }

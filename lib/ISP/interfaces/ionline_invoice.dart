@@ -1,3 +1,5 @@
 abstract class IonLineInvoice {
-  void onLineOrderInvoice();
+  void onLineOrderInvoice() {
+    print('Generating online order invoice...');
+  }
 }

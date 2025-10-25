@@ -1,3 +1,5 @@
+
+
 void main(List<String> arguments) {
   // OCP
 
@@ -28,5 +30,13 @@ void main(List<String> arguments) {
   */
 
  // ISP
+ 
+ /*
+  PayByAll paymentMethod = PayByAll();
+  paymentMethod.processOrder();
+  paymentMethod.cashOrderInvoice();
+  paymentMethod.creditOrderInvoice();
+  paymentMethod.onLineOrderInvoice();
+  */
 
 }
